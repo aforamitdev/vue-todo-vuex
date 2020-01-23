@@ -1,6 +1,8 @@
 dependencies:
+  axios: 0.19.2
   core-js: 3.6.4
   vue: 2.6.11
+  vuex: 3.1.2
 devDependencies:
   '@vue/cli-plugin-babel': 4.1.2_@vue+cli-service@4.1.2
   '@vue/cli-plugin-eslint': 4.1.2_24f387d243024b6d224425483548dff1
@@ -1667,6 +1669,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
+  /axios/0.19.2:
+    dependencies:
+      follow-redirects: 1.5.10
+    dev: false
+    resolution:
+      integrity: sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   /babel-eslint/10.0.3_eslint@5.16.0:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -2780,6 +2788,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+  /debug/3.1.0:
+    dependencies:
+      ms: 2.0.0
+    dev: false
+    resolution:
+      integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   /debug/3.2.6:
     dependencies:
       ms: 2.1.2
@@ -3702,6 +3716,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-3Z4XhFZ3992uIq0XOqb9AreonueSYphE6oYbpt5+3u06JWklbsPkNv3ZKkP9Bz/r+1MWCaMoSQ28P85+1Yc77w==
+  /follow-redirects/1.5.10:
+    dependencies:
+      debug: 3.1.0
+    dev: false
+    engines:
+      node: '>=4.0'
+    resolution:
+      integrity: sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
   /follow-redirects/1.9.0:
     dependencies:
       debug: 3.2.6
@@ -5344,7 +5366,6 @@ packages:
     resolution:
       integrity: sha1-viwAX9oy4LKa8fBdfEszIUxwH5I=
   /ms/2.0.0:
-    dev: true
     resolution:
       integrity: sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
   /ms/2.1.1:
@@ -8146,6 +8167,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
+  /vuex/3.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-ha3jNLJqNhhrAemDXcmMJMKf1Zu4sybMPr9KxJIuOpVcsDQlTBYLLladav2U+g1AvdYDG5Gs0xBTb0M5pXXYFQ==
   /watchpack/1.6.0:
     dependencies:
       chokidar: 2.1.8
@@ -8490,9 +8515,11 @@ specifiers:
   '@vue/cli-plugin-babel': ^4.1.0
   '@vue/cli-plugin-eslint': ^4.1.0
   '@vue/cli-service': ^4.1.0
+  axios: ^0.19.2
   babel-eslint: ^10.0.3
   core-js: ^3.4.4
   eslint: ^5.16.0
   eslint-plugin-vue: ^5.0.0
   vue: ^2.6.10
   vue-template-compiler: ^2.6.10
+  vuex: ^3.1.2
